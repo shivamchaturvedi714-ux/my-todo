@@ -11,7 +11,7 @@ todos= function.get_todos()
 
 st.title("My Todo App")
 st.subheader("My Todos")
-st.write("mera naam shivam hai")
+st.write("USE MY TODO TO ENHANCE YOUR PRODUCTIVITY")
 for index,todo in enumerate(todos):
     checkbox=st.checkbox(todo, key=todo)
     if checkbox:
@@ -19,6 +19,7 @@ for index,todo in enumerate(todos):
         function.write_fun(todos)
         del st.session_state[todo]
         st.rerun()
+
 
 
 st.text_input(label=" ",placeholder="add new todo...",
